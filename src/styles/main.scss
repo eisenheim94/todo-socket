@@ -1,0 +1,22 @@
+// Override default variables before the import
+@import "custom-variables";
+
+// Import Bootstrap and its default variables
+@import 'bootstrap';
+
+/* ############### UTILITIES/HELPER CLASSES ############### */
+@import "util/background";
+@import "util/border";
+@import "util/height";
+@import "util/margin";
+@import "util/misc";
+@import "util/padding";
+@import "util/position";
+@import "util/typography";
+@import "util/width";
+
+// Libraries
+@import 'react-toastify/dist/ReactToastify.css';
+
+// Global style
+@import 'global';

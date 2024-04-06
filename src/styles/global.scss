@@ -1,0 +1,17 @@
+body, html, #root {
+  height: 100%;
+}
+
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.cur-pointer {
+  cursor: pointer;
+}

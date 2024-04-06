@@ -1,0 +1,28 @@
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1rem;
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$white:    #fff;
+$gray-100: #C5CBD5;
+$gray-200: #767680;
+$gray-300: #6A6A73;
+$gray-400: #8A8A8A;
+$gray-500: #434346;
+$gray-600: #3C3C3C;
+$gray-700: #303030;
+$gray-800: #282828;
+$gray-900: #1C1C1C;
+$black:    #0f0f0f;
+
+$dark:          $gray-900;
+
+$text-muted:    $gray-400;
+
+$spacer: 1rem;
+
+
+$input-border-color:                    $white;
+
+$input-group-addon-bg:                  $white;
+$input-group-addon-border-color:        $white;

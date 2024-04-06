@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+import 'styles/main.scss';
+import Home from '@pages/Home';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import View from '@pages/View';
+import NotFound from '@pages/NotFound';
+
+const router = createBrowserRouter([
+  {
+    path: '/*',
+    element: <NotFound />,
+  },
+  {
+    path: '/view/:id',
+    element: <View />,
+  },
+  {
+    path: '/',
+    element: <Home />,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
