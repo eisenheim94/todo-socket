@@ -1,7 +1,7 @@
 import { io, Socket } from 'socket.io-client';
 import { ISocketTodoProgressData, SOCKET_EVENTS } from './types/socket.types';
 
-const socketWithoutTypes: Socket = io('http://localhost:8000');
+const socketWithoutTypes: Socket = io(`${process.env.REACT_APP_SOCKET_URL}`);
 
 interface SocketEventsOn {
   [SOCKET_EVENTS.UPDATE_TODO_PROGRESS]: (data: ISocketTodoProgressData) => void;
